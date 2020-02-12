@@ -17,13 +17,6 @@ const connect = function() {
   conn.on('connect', () => {
   //sends my player name to server
     conn.write('Name: AAA');
-  //sends what moevemnt i want to do with the snake to the server
-    setTimeout(() => {
-      setInterval(() => {
-        conn.write('Move: up');
-      }, 50)
-    }, 700)
-  
   });
  
   return conn;
