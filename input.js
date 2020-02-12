@@ -20,6 +20,9 @@ const setupInput = function(conn) {
     if (key === 'd' ) {
       connection.write('Move: right');
     }
+    if (key === '1') {
+      connection.write('Say: SNAKE QUEEN!');
+    }
   };
 
   const stdin = process.stdin;
